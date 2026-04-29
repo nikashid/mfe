@@ -3,8 +3,6 @@ const nodePackageJson = require('../package.json');
 const { merge } = require('webpack-merge');
 const commonConfig = require('./webpack.common');
 
-const path = process.env.ENV_PATH;
-
 const prodConfig = {
     mode: 'production',
     output: {
