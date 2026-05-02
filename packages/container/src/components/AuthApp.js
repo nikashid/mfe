@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef, useEffect } from "react";
 
-import { mount } from "marketing/MarketingApp";
+import { mount } from "auth/AuthApp";
 import { use } from "react";
 import { useHistory } from "react-router-dom";
 
@@ -22,7 +22,7 @@ export default () => {
     if (history) {
       history.listen(onParentNavigate);
     }
-
+    
   }, []);
 
   return <div ref={ref}></div>;
